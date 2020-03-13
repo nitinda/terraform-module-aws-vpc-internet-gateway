@@ -51,13 +51,11 @@ _To use this module, add the following call to your code:_
 module "vpc_internet_gateway" {
   source = "git::https://github.com/nitinda/terraform-module-aws-vpc-internet-gateway.git?ref=master"
 
-
   vpc_id = var.vpc_id
   tags   = {
     Environment = "prod"
     Project     = "POC"
   }
-
 }
 ```
 
