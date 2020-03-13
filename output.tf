@@ -1,7 +1,3 @@
 output "id" {
-  value = aws_subnet.subnet.id
-}
-
-output "arn" {
-  value = aws_subnet.subnet.arn
+  value = aws_internet_gateway.internet_gateway.id
 }
