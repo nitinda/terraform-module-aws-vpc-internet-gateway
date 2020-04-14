@@ -65,10 +65,10 @@ module "vpc_internet_gateway" {
 
 _The variables required in order for the module to be successfully called from the deployment repository are the following:_
 
-|**_Variable_** | **_Description_** | **_Type_** | **_Argument Status_** |
-|:----|:----|-----:|:---:|
+|**_Variable_** | **_Description_** | **_Type_** | **_Argument Status_** | **_Default Value_** |
+|:----|:----|-----:|:---:|:---:|
 | **_vpc\_id_** | _The VPC ID_ | _string_ | **_Required_** |
-| **_tags_** | _A mapping of tags to assign to the resource_ | _map(string)_ | **_Required_** |
+| **_tags_** | _A mapping of tags to assign to the resource_ | _map(string)_ | **_Optional_** | **_{}_** |
 
 
 
