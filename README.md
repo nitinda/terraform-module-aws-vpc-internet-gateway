@@ -59,6 +59,21 @@ module "vpc_internet_gateway" {
 }
 ```
 
+```tf
+module "vpc_internet_gateway" {
+  source = "git::https://github.com/nitinda/terraform-module-aws-vpc-internet-gateway.git?ref=master"
+
+  vpc_id = var.vpc_id
+  tags   = merge(
+    var.common_tags,
+    {
+      Environment = "prod"
+      Name        = "vpc-internet-gateway"
+    }
+  )
+}
+```
+
 ---
 
 ## _Inputs_
